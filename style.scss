@@ -1,0 +1,54 @@
+ /*   Resetando o HTML  */ 
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+/*  Importando as outras linhas de estilo    */ 
+@import "partes/header";
+@import "partes/sectionhome";
+@import "partes/sectionservices";
+@import "partes/sectiontestimony";
+@import "partes/footer";
+
+/*    Cuidando do tamanho da tela sem afetar o background   */ 
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+/*   Resetando as configurações do CSS-SASS   */ 
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+    background-color: rosybrown;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*   FIM    Resetando as configurações do CSS-SASS   */ 

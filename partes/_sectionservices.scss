@@ -1,0 +1,52 @@
+/*  Estilo da aba serviços   */ 
+
+.service-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0px 25px 34px 25px;
+    flex: 1;
+
+
+    img {
+        max-height: 310px;
+        
+    }
+
+    p {
+        background-color: white;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px;
+        margin-top: -5px;
+        font-size: 20px;
+        box-shadow: 0px -1px 17px -4px black;
+
+    }
+
+
+}
+.service-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 30px;
+}
+
+
+@media screen and (max-width:768px) { 
+    .service-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    img {
+        max-width: 447px;
+    }
+}

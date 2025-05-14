@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/*   Resetando o HTML  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/*  Importando as outras linhas de estilo    */
+/*  Estilo do Header com o menu  */
+header {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+i {
+  color: black;
+}
+
+.header-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: white;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.header-button {
+  border: 1px solid black;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: black;
+  background-color: transparent;
+  transition: 0.8s;
+}
+
+.header-button a {
+  color: black;
+}
+
+.header-button:hover {
+  border: 1px solid white;
+  background-color: white;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo img {
+  width: 300px;
+  min-width: 182px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .header-logo img {
+    margin-top: 50px;
+  }
+  .header-button {
+    display: none;
+  }
+  .header-icons {
+    font-size: 20px;
+  }
+}
+/*  Estilo do home    */
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 20px;
+  color: black;
+}
+.home-content h1 {
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home-content p {
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+.home-content a {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: 0.8s;
+}
+
+.home-botton:hover { /* Mudar o botão entrar em contato de cor ao colocar mouse */
+  border: 1px solid white;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .home-content h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .home-content p {
+    max-width: 350px;
+    text-align: center;
+  }
+  .home-content a {
+    border: 1px solid black;
+    background-color: transparent;
+  }
+}
+/* ---------------ABOUT--------------------  */
+.about-content {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 34px 14px 64px 14px;
+  font-size: 20px;
+}
+.about-content img {
+  max-width: 570px;
+}
+
+.about-content div {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    max-width: 90%;
+  }
+}
+/*  Estilo da aba serviços   */
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0px 25px 34px 25px;
+  flex: 1;
+}
+.service-content img {
+  max-height: 310px;
+}
+.service-content p {
+  background-color: white;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  margin-top: -5px;
+  font-size: 20px;
+  box-shadow: 0px -1px 17px -4px black;
+}
+
+.service-tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .service-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  img {
+    max-width: 447px;
+  }
+}
+/*   Estilo da section testimony    */
+.testimony {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  color: black;
+}
+
+.testimony-tittle {
+  padding: 40px;
+}
+
+.testimony-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  flex: 1;
+}
+.testimony-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimony-tittle h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .testimony-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Inicio do estilo do mapa */
+.map {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 90%;
+}
+
+.map-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px;
+}
+
+.footer-content {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex: 1;
+  gap: 16px;
+}
+.footer-content img {
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-content a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: white;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.footer-text {
+  color: black;
+  text-align: center;
+}
+
+/* Botão do WhatsApp --------------------------*/
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .btn-whatsapp-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .btn-whatsapp-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-whatsapp {
+    width: 60px;
+  }
+  .footer-content {
+    margin-top: 25px;
+  }
+}
+/*    Cuidando do tamanho da tela sem afetar o background   */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*   Resetando as configurações do CSS-SASS   */
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: rosybrown;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*   FIM    Resetando as configurações do CSS-SASS   *//*# sourceMappingURL=style.css.map */

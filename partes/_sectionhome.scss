@@ -1,0 +1,96 @@
+/*  Estilo do home    */ 
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 20px;
+    color: black;
+    
+
+    h1 {
+        font-size: 60px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    p {
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    a {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid black;
+        padding: 8px 24px;
+        border-radius: 4px;
+        background-color: transparent;
+        transition: 0.8s;
+    }
+}
+.home-botton:hover { /* Mudar o botão entrar em contato de cor ao colocar mouse */ 
+    border: 1px solid white;
+    background-color: white;
+}
+
+@media screen and (max-width:768px) {
+    .home-content{
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        p {
+            max-width: 350px;
+            text-align: center;
+        }
+
+        a {
+            border: 1px solid black;
+            background-color: transparent;
+        }
+        
+    }
+    
+} 
+
+/* ---------------ABOUT--------------------  */ 
+
+.about-content {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    padding: 34px 14px 64px 14px;
+    font-size: 20px;
+
+    img {
+        max-width: 570px;
+    }
+}
+
+.about-content div {
+    flex: 1;
+}
+
+@media screen and (max-width:768px) { 
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        max-width: 90%;
+    }
+}
+
